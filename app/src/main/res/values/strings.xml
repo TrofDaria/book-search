@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Book Search</string>
     <string name="search_parameters">Параметры поиска</string>
+    <string name="the_needed_book_will_always_be_found">Нужная книга всегда найдётся</string>
 </resources>
