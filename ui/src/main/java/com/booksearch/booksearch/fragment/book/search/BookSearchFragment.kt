@@ -1,4 +1,4 @@
-package com.booksearch.booksearch.ui.fragment.book.search
+package com.booksearch.booksearch.fragment.book.search
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -11,11 +11,11 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.booksearch.booksearch.R
+import com.booksearch.booksearch.activity.shared.viewmodel.SharedBookSearchViewModel
+import com.booksearch.booksearch.base.BaseFragment
 import com.booksearch.booksearch.databinding.FragmentBookSearchBinding
+import com.booksearch.booksearch.extension.goneUnless
 import com.booksearch.domain.model.BookSearchParameter
-import com.booksearch.booksearch.ui.activity.shared.viewmodel.SharedBookSearchViewModel
-import com.booksearch.booksearch.ui.base.BaseFragment
-import com.booksearch.booksearch.ui.extension.goneUnless
 
 
 class BookSearchFragment : BaseFragment(), SearchView.OnQueryTextListener {

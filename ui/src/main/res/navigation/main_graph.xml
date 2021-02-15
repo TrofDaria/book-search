@@ -7,18 +7,18 @@
 
     <fragment
         android:id="@+id/book_search_fragment"
-        android:name="com.booksearch.booksearch.ui.fragment.book.search.BookSearchFragment"
+        android:name="com.booksearch.booksearch.fragment.book.search.BookSearchFragment"
         tools:layout="@layout/fragment_book_search">
         <action
             android:id="@+id/action_book_search_fragment_to_book_search_parameters_fragment"
             app:destination="@id/book_search_parameters_fragment"
-            app:enterAnim="@anim/nav_default_enter_anim"
-            app:exitAnim="@anim/nav_default_exit_anim"
-            app:popEnterAnim="@animator/nav_default_enter_anim"
-            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+            app:enterAnim="@anim/fade_in"
+            app:exitAnim="@anim/fade_out"
+            app:popEnterAnim="@anim/fade_in"
+            app:popExitAnim="@anim/fade_out" />
     </fragment>
     <fragment
         android:id="@+id/book_search_parameters_fragment"
-        android:name="com.booksearch.booksearch.ui.fragment.book.search.parameters.BookSearchParametersFragment"
+        android:name="com.booksearch.booksearch.fragment.book.search.parameters.BookSearchParametersFragment"
         tools:layout="@layout/fragment_book_search_parameters" />
 </navigation>

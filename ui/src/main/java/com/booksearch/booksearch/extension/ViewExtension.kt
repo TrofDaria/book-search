@@ -1,4 +1,4 @@
-package com.booksearch.booksearch.ui.extension
+package com.booksearch.booksearch.extension
 
 import android.view.View
 

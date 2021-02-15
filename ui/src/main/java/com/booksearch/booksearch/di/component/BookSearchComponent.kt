@@ -3,7 +3,7 @@ package com.booksearch.booksearch.di.component
 import com.booksearch.domain.interactor.BooksInteractor
 import com.booksearch.domain.interactor.BooksInteractorImpl
 import com.booksearch.domain.repository.BooksRepository
-import com.booksearch.booksearch.ui.fragment.book.search.BookSearchViewModel
+import com.booksearch.booksearch.fragment.book.search.BookSearchViewModel
 import dagger.Component
 import dagger.Module
 import dagger.Provides

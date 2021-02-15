@@ -1,4 +1,4 @@
-package com.booksearch.booksearch.ui.viewholder
+package com.booksearch.booksearch.viewholder
 
 import androidx.recyclerview.widget.RecyclerView
 import com.booksearch.booksearch.databinding.ItemBookBinding

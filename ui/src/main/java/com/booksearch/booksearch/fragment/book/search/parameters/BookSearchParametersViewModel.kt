@@ -1,6 +1,6 @@
-package com.booksearch.booksearch.ui.fragment.book.search.parameters
+package com.booksearch.booksearch.fragment.book.search.parameters
 
-import com.booksearch.booksearch.ui.base.BaseViewModel
+import com.booksearch.booksearch.base.BaseViewModel
 
 class BookSearchParametersViewModel : BaseViewModel() {
 

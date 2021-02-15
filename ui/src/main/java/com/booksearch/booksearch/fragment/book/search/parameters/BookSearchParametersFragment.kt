@@ -1,4 +1,4 @@
-package com.booksearch.booksearch.ui.fragment.book.search.parameters
+package com.booksearch.booksearch.fragment.book.search.parameters
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,8 +8,8 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.ViewModelProvider
 import com.booksearch.booksearch.databinding.FragmentBookSearchParametersBinding
 import com.booksearch.domain.model.BookSearchParameter
-import com.booksearch.booksearch.ui.activity.shared.viewmodel.SharedBookSearchViewModel
-import com.booksearch.booksearch.ui.base.BaseFragment
+import com.booksearch.booksearch.activity.shared.viewmodel.SharedBookSearchViewModel
+import com.booksearch.booksearch.base.BaseFragment
 
 class BookSearchParametersFragment : BaseFragment() {
 

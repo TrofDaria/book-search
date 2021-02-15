@@ -1,12 +1,12 @@
-package com.booksearch.booksearch.ui.fragment.book.search
+package com.booksearch.booksearch.fragment.book.search
 
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import com.booksearch.booksearch.App
 import com.booksearch.booksearch.R
 import com.booksearch.booksearch.di.component.DaggerBookSearchComponent
-import com.booksearch.booksearch.ui.adapter.BooksAdapter
-import com.booksearch.booksearch.ui.base.BaseViewModel
+import com.booksearch.booksearch.adapter.BooksAdapter
+import com.booksearch.booksearch.base.BaseViewModel
 import com.booksearch.common.safeLet
 import com.booksearch.domain.dto.GetBooksParameters
 import com.booksearch.domain.interactor.BooksInteractor

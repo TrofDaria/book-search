@@ -1,10 +1,10 @@
-package com.booksearch.booksearch.ui.activity
+package com.booksearch.booksearch.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.viewModels
 import com.booksearch.booksearch.R
-import com.booksearch.booksearch.ui.activity.shared.viewmodel.SharedBookSearchViewModel
+import com.booksearch.booksearch.activity.shared.viewmodel.SharedBookSearchViewModel
 
 class MainActivity : AppCompatActivity() {
 

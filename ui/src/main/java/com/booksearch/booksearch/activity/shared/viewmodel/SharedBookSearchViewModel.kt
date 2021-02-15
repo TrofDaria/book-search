@@ -1,4 +1,4 @@
-package com.booksearch.booksearch.ui.activity.shared.viewmodel
+package com.booksearch.booksearch.activity.shared.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

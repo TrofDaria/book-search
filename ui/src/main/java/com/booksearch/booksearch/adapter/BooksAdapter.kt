@@ -1,4 +1,4 @@
-package com.booksearch.booksearch.ui.adapter
+package com.booksearch.booksearch.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -6,9 +6,9 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import com.booksearch.booksearch.R
 import com.booksearch.booksearch.databinding.ItemBookBinding
+import com.booksearch.booksearch.extension.loadImageByLink
+import com.booksearch.booksearch.viewholder.BookViewHolder
 import com.booksearch.domain.model.Book
-import com.booksearch.booksearch.ui.extension.loadImageByLink
-import com.booksearch.booksearch.ui.viewholder.BookViewHolder
 
 
 class BooksAdapter : ListAdapter<Book, BookViewHolder>(BookDiffCallback()) {

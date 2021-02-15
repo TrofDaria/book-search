@@ -1,10 +1,9 @@
-package com.booksearch.booksearch.ui.extension
+package com.booksearch.booksearch.extension
 
 import android.util.Log
 import android.widget.ImageView
 import com.booksearch.booksearch.R
 import com.bumptech.glide.Glide
-import com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions
 
 fun ImageView.loadImageByLink(link: String) {
     try {
