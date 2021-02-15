@@ -1,0 +1,87 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.booksearch.booksearch"
+        minSdkVersion 21
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures {
+        viewBinding = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':domain')
+
+    implementation project(':common')
+
+    implementation project(':data')
+
+    // Androidx Core
+    implementation 'androidx.core:core-ktx:1.3.2'
+
+    // Appcompat
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+
+    // Material Components
+    implementation 'com.google.android.material:material:1.3.0'
+
+    // Constraint Layout
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    // JUnit
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+
+    // AndroidX Test Library
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // Navigation
+    implementation "androidx.navigation:navigation-fragment-ktx:2.3.3"
+    implementation "androidx.navigation:navigation-ui-ktx:2.3.3"
+
+    // RxAndroid
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+
+    //Glide
+    def glide_version = "4.11.0"
+    implementation "com.github.bumptech.glide:glide:$glide_version"
+    kapt "com.github.bumptech.glide:compiler:$glide_version"
+
+    // Dagger
+    kapt "com.google.dagger:dagger-compiler:2.25.4"
+    api 'com.google.dagger:dagger-android:2.25.4'
+    api 'com.google.dagger:dagger-android-support:2.25.4'
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.25.4'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.25.4'
+
+}
