@@ -8,4 +8,8 @@ class BookSearchParametersViewModel : BaseViewModel() {
         navController?.navigateUp()
     }
 
+    fun onSearchParameterChanged() {
+        navController?.navigateUp()
+    }
+
 }

@@ -6,4 +6,5 @@ import androidx.navigation.NavController
 abstract class BaseViewModel : ViewModel(){
 
     var navController: NavController? = null
+
 }

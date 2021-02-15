@@ -13,22 +13,25 @@
         android:theme="?attr/actionBarTheme">
 
         <SearchView
+            android:id="@+id/search_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:layout_centerVertical="true" />
+            android:layout_centerVertical="true"
+            android:iconifiedByDefault="false"
+            android:queryHint="@string/search" />
 
         <ImageButton
             android:id="@+id/image_button_search_parameters"
+            style="@style/ImageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="14dp"
-            android:background="@android:color/transparent"
             android:contentDescription="@string/search_parameters"
             android:padding="5dp"
-            android:src="@drawable/ic_parameters" />
+            tools:src="@drawable/ic_parameters" />
     </RelativeLayout>
 
     <FrameLayout
@@ -52,17 +55,32 @@
             android:id="@+id/frame_layout_no_books"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:animateLayoutChanges="true"
             android:background="@android:color/white"
             android:paddingStart="44dp"
             android:paddingTop="100dp"
-            android:paddingEnd="44dp">
+            android:paddingEnd="44dp"
+            tools:visibility="gone">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:text="@string/the_needed_book_will_always_be_found" />
+                android:text="@string/the_needed_book_will_always_be_found"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.RobotoMedium.Black_38.Size_20" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_layout_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/ProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
         </FrameLayout>
 
     </FrameLayout>

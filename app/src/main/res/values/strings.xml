@@ -2,4 +2,12 @@
     <string name="app_name">Book Search</string>
     <string name="search_parameters">Параметры поиска</string>
     <string name="the_needed_book_will_always_be_found">Нужная книга всегда найдётся</string>
+    <string name="specify_the_parameters_for_book_search">Уточните параметры, по которым искать книги</string>
+    <string name="search_by_all">Поиск по всему</string>
+    <string name="by_author">По автору</string>
+    <string name="by_title">По названию</string>
+    <string name="by_genre">По жанру</string>
+    <string name="by_publisher">По издателю</string>
+    <string name="search">Поиск</string>
+    <string name="back">Назад</string>
 </resources>

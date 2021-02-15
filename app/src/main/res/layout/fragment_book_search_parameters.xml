@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:orientation="horizontal"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,19 +16,117 @@
 
         <ImageButton
             android:id="@+id/image_button_back"
+            style="@style/ImageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="5dp"
             android:layout_marginStart="11dp"
-            android:background="@android:color/transparent"
-            android:contentDescription="@string/search_parameters"
+            android:contentDescription="@string/back"
+            android:padding="5dp"
             android:src="@drawable/ic_back_arrow" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="27dp"
-            android:text="@string/search_parameters" />
+            android:text="@string/search_parameters"
+            android:textAppearance="@style/TextAppearance.RobotoMedium.White.Size_20" />
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="@string/specify_the_parameters_for_book_search"
+                android:textAppearance="@style/TextAppearance.RobotoRegular.Black_87.Size_16" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_search_parameters"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radio_button_search_by_all"
+                    style="@style/RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/search_by_all"
+                    tools:checked="true" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black_13" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_by_author"
+                    style="@style/RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/by_author" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black_13" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_by_title"
+                    style="@style/RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/by_title" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black_13" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_by_genre"
+                    style="@style/RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/by_genre" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black_13" />
+
+                <RadioButton
+                    android:id="@+id/radio_button_by_publisher"
+                    style="@style/RadioButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="16dp"
+                    android:text="@string/by_publisher" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/black_13" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>
